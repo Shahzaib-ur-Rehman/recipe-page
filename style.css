@@ -1,0 +1,199 @@
+:root {
+  --clr-primary-400: hsl(14, 45%, 36%);
+  --clr-primary-900: hsl(332, 51%, 32%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(330, 100%, 98%);
+  --clr-neutral-400: hsl(30, 54%, 90%);
+  --clr-neutral-600: hsl(30, 18%, 87%);
+  --clr-neutral-800: hsl(30, 10%, 34%);
+  --clr-neutral-900: hsl(24, 5%, 18%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-neutral-800);
+  /*  */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Blog Recipe Style */
+.blog-container {
+  padding: 2em;
+  max-width: 1312px;
+}
+
+.blog-title {
+  font-family: "Young Serif", serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0.6em;
+}
+.blog-desc {
+  word-spacing: 1;
+  margin-bottom: 1.5em;
+}
+
+.receipe-prepration-container {
+  background-color: var(--clr-neutral-200);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.receipe-prepration-title {
+  color: var(--clr-primary-900);
+  margin-bottom: 0.6em;
+}
+
+.receipe-prepration-list {
+  /* padding: 1.5em; */
+  padding-inline: 1.5em;
+}
+
+.receipe-prepration-list-item {
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.secondary-heading {
+  font-family: "Young Serif", serif;
+  color: var(--clr-primary-400);
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+
+.recipe-ingredients-list {
+  padding-inline: 1.5em;
+}
+.recipe-ingredients-list li {
+  padding-left: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+.blog-recipe-instructions-list {
+  padding-inline: 1.5em;
+}
+.blog-recipe-instructions-list li {
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.blog-recipe-instructions-list li strong {
+  color: var(--clr-neutral-800);
+}
+
+.blog-recipe-nutrition-container p {
+  margin-bottom: 0.8em;
+}
+
+.blog-recipe-nutrition-table {
+}
+.blog-recipe-nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.blog-recipe-nutrition-table-row {
+  border-bottom: 1px solid #ddd;
+}
+.blog-recipe-nutrition-name {
+  padding: 0.8em;
+}
+.blog-recipe-nutrition-value {
+  font-weight: 800;
+  color: var(--clr-primary-900);
+  padding: 0.8em;
+}
+.divider {
+  margin-block: 1.5em;
+}
+
+@media (min-width: 992px) {
+  .recipe-blog {
+    padding: 2em;
+  }
+  .blog-container {
+    padding-inline: 0;
+  }
+
+  .recipe-blog-banner-container img {
+ 
+    border-radius: 12px;
+  }
+}
